@@ -6,7 +6,7 @@
 
 % Change "review" to "final" to generate the final (sometimes called camera-ready) version.
 % Change to "preprint" to generate a non-anonymous version with page numbers.
-\usepackage[review]{acl}
+\usepackage[final]{mtsummit25}
 
 % Standard package includes
 \usepackage{times}
@@ -41,7 +41,7 @@
 %
 % and set <dim> to something 5cm or larger.
 
-\title{Instructions for *ACL Proceedings}
+\title{Instructions for MT Summit 2025 Proceedings}
 
 % Author information can be set in various styles:
 % For several authors from the same institution:
@@ -111,20 +111,19 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-This document is a supplement to the general instructions for *ACL authors. It contains instructions for using the \LaTeX{} style files for ACL conferences.
+This document is a supplement to the general instructions for MT Summit 2025 authors. It contains instructions for using the \LaTeX{} style files for the Machine MT Summit 2025.
 The document itself conforms to its own specifications, and is therefore an example of what your manuscript should look like.
 These instructions should be used both for papers submitted for review and for final versions of accepted papers.
 \end{abstract}
 
 \section{Introduction}
 
-These instructions are for authors submitting papers to *ACL conferences using \LaTeX. They are not self-contained. All authors must follow the general instructions for *ACL proceedings,\footnote{\url{http://acl-org.github.io/ACLPUB/formatting.html}} and this document contains additional instructions for the \LaTeX{} style files.
+These instructions are for authors submitting papers to MT Summit 2025 using \LaTeX. They are not self-contained. All authors must follow the general instructions for MT Summit 2025\footnote{\url{https://mtsummit2025.unige.ch/calls.html}}, and this document contains additional instructions for the \LaTeX{} style files, which is an adaptation of (or rely on) the latex template for *ACL conferences\footnote{\url{https://github.com/acl-org/acl-style-files}}.
 
-The templates include the \LaTeX{} source of this document (\texttt{acl\_latex.tex}),
-the \LaTeX{} style file used to format it (\texttt{acl.sty}),
-an ACL bibliography style (\texttt{acl\_natbib.bst}),
-an example bibliography (\texttt{custom.bib}),
-and the bibliography for the ACL Anthology (\texttt{anthology.bib}).
+The templates include the \LaTeX{} source of this document (\texttt{mtsummit25.tex}),
+the \LaTeX{} style file used to format it (\texttt{mtsummit25.sty}),
+a MT Summit bibliography style (\texttt{mtsummit25\_natbib.bst}),
+an example bibliography (\texttt{mtsummit25.bib}), and the bibliography for the ACL Anthology (\texttt{anthology.bib}).
 
 \section{Engines}
 
@@ -142,13 +141,13 @@ The first line of the file must be
 To load the style file in the review version:
 \begin{quote}
 \begin{verbatim}
-\usepackage[review]{acl}
+\usepackage[review]{mtsummit25}
 \end{verbatim}
 \end{quote}
 For the final version, omit the \verb|review| option:
 \begin{quote}
 \begin{verbatim}
-\usepackage{acl}
+\usepackage{mtsummit25}
 \end{verbatim}
 \end{quote}
 
@@ -285,10 +284,10 @@ with other style files.
 \nocite{Ando2005,andrew2007scalable,rasooli-tetrault-2015}
 
 The \LaTeX{} and Bib\TeX{} style files provided roughly follow the American Psychological Association format.
-If your own bib file is named \texttt{custom.bib}, then placing the following before any appendices in your \LaTeX{} file will generate the references section for you:
+If your own bib file is named \texttt{mtsummit25.bib}, then placing the following before any appendices in your \LaTeX{} file will generate the references section for you:
 \begin{quote}
 \begin{verbatim}
-\bibliography{custom}
+\bibliography{mtsummit25}
 \end{verbatim}
 \end{quote}
 
@@ -296,7 +295,7 @@ You can obtain the complete ACL Anthology as a Bib\TeX{} file from \url{https://
 To include both the Anthology and your own .bib file, use the following instead of the above.
 \begin{quote}
 \begin{verbatim}
-\bibliography{anthology,custom}
+\bibliography{anthology,mtsummit25}
 \end{verbatim}
 \end{quote}
 
@@ -350,10 +349,10 @@ and earlier ACL and EACL formats written by several people, including
 John Chen, Henry S. Thompson and Donald Walker.
 Additional elements were taken from the formatting instructions of the \emph{International Joint Conference on Artificial Intelligence} and the \emph{Conference on Computer Vision and Pattern Recognition}.
 
-% Bibliography entries for the entire Anthology, followed by custom entries
-%\bibliography{anthology,custom}
+% Bibliography entries for the entire Anthology, followed by custom (mtsummit25) entries
+%\bibliography{anthology,mtsummit25}
 % Custom bibliography entries only
-\bibliography{custom}
+\bibliography{mtsummit25}
 
 \appendix
 
